@@ -1,4 +1,4 @@
-package oss.main;
+package NB.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,9 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 
-import oss.data.BoardItem;
-import oss.data.REF;
-import oss.data.UserData;
+import NB.data.BoardItem;
+import NB.data.REF;
+import NB.data.MyUser;
 
 public class WriteActivity extends AppCompatActivity {
 
@@ -22,7 +22,7 @@ public class WriteActivity extends AppCompatActivity {
 
 
         findViewById(R.id.write_confirm_button).setOnClickListener(v -> {
-            UserData user = getIntent().getParcelableExtra(REF.USER.name());
+            MyUser user = getIntent().getParcelableExtra(REF.USER.name());
 
             Intent intent = new Intent();
             BoardItem boardItem = new BoardItem(id.getText().toString(), info.getText().toString(), user);

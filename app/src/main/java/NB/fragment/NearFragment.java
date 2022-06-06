@@ -1,4 +1,4 @@
-package oss.fragment;
+package NB.fragment;
 
 import android.Manifest;
 import android.content.Context;
@@ -27,7 +27,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import oss.main.R;
+import NB.main.R;
 
 /**
  * A simple {@link Fragment} subclass.

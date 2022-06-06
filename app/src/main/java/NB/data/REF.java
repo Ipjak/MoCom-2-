@@ -1,4 +1,4 @@
-package oss.data;
+package NB.data;
 
 public enum REF {
     ID, LIST, USER

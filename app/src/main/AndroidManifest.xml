@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="oss.main">
+    package="NB.main">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -18,9 +18,10 @@
         <meta-data
             android:name = "com.google.android.geo.API_KEY"
             android:value="${MAPS_API_KEY}"/>
-        <activity android:name=".WriteActivity"></activity>
-        <activity android:name=".BoardActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name="NB.main.WriteActivity"></activity>
+        <activity android:name="NB.main.BoardActivity" />
+        <activity android:name="NB.main.LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

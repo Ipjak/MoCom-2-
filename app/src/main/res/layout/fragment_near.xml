@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:id="@+id/layout_near"
     android:layout_height="match_parent"
-    tools:context="oss.fragment.NearFragment">
+    tools:context="NB.fragment.NearFragment">
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/map"

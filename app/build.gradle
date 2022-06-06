@@ -6,13 +6,13 @@ apply plugin: 'com.google.gms.google-services'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "oss.main"
-        minSdkVersion 16
-        targetSdkVersion 30
+        applicationId "NB.main"
+        minSdkVersion 19
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
@@ -54,7 +54,8 @@ dependencies {
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.multidex:multidex:2.0.1'
-    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    //요거 버젼 이상
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
 }
 repositories {
     mavenCentral()

@@ -1,4 +1,4 @@
-package oss.data;
+package NB.data;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,14 +13,9 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
-import oss.main.R;
+import NB.main.R;
 
-/**
- * 게시판 항목 뷰 어댑터
- *
- * @see BoardItem
- *
- * */
+
 public class BoardItemAdapter extends RecyclerView.Adapter<BoardItemAdapter.ViewHolder> {
 
     private ArrayList<BoardItem> itemList = new ArrayList<>();

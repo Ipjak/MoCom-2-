@@ -1,4 +1,4 @@
-package oss.fragment;
+package NB.fragment;
 
 import android.os.Bundle;
 
@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import oss.main.R;
+import NB.main.R;
 
 /**
  * A simple {@link Fragment} subclass.

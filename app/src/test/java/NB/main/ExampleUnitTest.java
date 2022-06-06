@@ -1,4 +1,4 @@
-package oss.main;
+package NB.main;
 
 import org.junit.Test;
 

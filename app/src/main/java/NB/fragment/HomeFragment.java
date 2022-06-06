@@ -1,11 +1,7 @@
-package oss.fragment;
+package NB.fragment;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -18,7 +14,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -30,16 +25,12 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
-import oss.data.BoardItem;
-import oss.data.BoardItemAdapter;
-import oss.data.REF;
-import oss.data.UserData;
-import oss.main.R;
-import oss.main.WriteActivity;
+import NB.data.BoardItem;
+import NB.data.BoardItemAdapter;
+import NB.data.REF;
+import NB.main.R;
 
-/**
- * @// TODO: 2021-07-27 글쓰기 버튼 구현
- */
+
 @IgnoreExtraProperties
 public class HomeFragment extends Fragment {
 

@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:455956365532:android:2f7914cd5c7cb55e6cf419",
         "android_client_info": {
-          "package_name": "oss.main"
+          "package_name": "NB.main"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "455956365532-d40iolsg64ueptf9gmnbe2qgl4o2shgg.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "oss.main",
+            "package_name": "NB.main",
             "certificate_hash": "48c3f6504ed696d14aef7a8d7a9b050fa189fe8d"
           }
         },

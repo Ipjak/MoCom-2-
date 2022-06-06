@@ -1,17 +1,13 @@
-package oss.util
+package NB.util
 
 import android.app.Activity
-import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
-import android.util.Log
-import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContract
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
-import oss.main.LoginActivity
 import java.sql.DriverManager.println
 
 class SignInIntentContract : ActivityResultContract<String, String>() {

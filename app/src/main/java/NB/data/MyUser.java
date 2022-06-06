@@ -1,34 +1,34 @@
-package oss.data;
+package NB.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class UserData implements Parcelable {
+public class MyUser implements Parcelable {
 
     public String userName;
     public String userMail;
 
-    public UserData(){};
+    public MyUser(){};
 
-    protected UserData(Parcel in) {
+    protected MyUser(Parcel in) {
         userName = in.readString();
         userMail = in.readString();
     }
 
-    public UserData(String userName, String userMail) {
+    public MyUser(String userName, String userMail) {
         this.userMail = userMail;
         this.userName = userName;
     }
 
-    public static final Creator<UserData> CREATOR = new Creator<UserData>() {
+    public static final Creator<MyUser> CREATOR = new Creator<MyUser>() {
         @Override
-        public UserData createFromParcel(Parcel in) {
-            return new UserData(in);
+        public MyUser createFromParcel(Parcel in) {
+            return new MyUser(in);
         }
 
         @Override
-        public UserData[] newArray(int size) {
-            return new UserData[size];
+        public MyUser[] newArray(int size) {
+            return new MyUser[size];
         }
     };
 

@@ -1,4 +1,4 @@
-package oss.main;
+package NB.main;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -15,19 +15,13 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import oss.data.BoardItem;
-import oss.data.REF;
-import oss.data.UserData;
-import oss.fragment.ChatFragment;
-import oss.fragment.HomeFragment;
-import oss.fragment.NearFragment;
+import NB.data.BoardItem;
+import NB.data.REF;
+import NB.data.MyUser;
+import NB.fragment.ChatFragment;
+import NB.fragment.HomeFragment;
+import NB.fragment.NearFragment;
 
-/**
- * 게시판 액티비티
- * 
- * @see HomeFragment ,NearFagment,ChatFragment
- * @ TODO: 2021-07-26 설정 화면 구현
- * */
 public class BoardActivity extends AppCompatActivity {
     HomeFragment homeFragment;
     NearFragment nearFragment;
@@ -61,7 +55,7 @@ public class BoardActivity extends AppCompatActivity {
 
         //계정정보
         Intent userIntent = getIntent();
-        UserData user = userIntent.getParcelableExtra(REF.USER.name());
+        MyUser user = userIntent.getParcelableExtra(REF.USER.name());
         Toast.makeText(this, user.userName+getString(R.string.signin_complete), Toast.LENGTH_SHORT).show();
 
         /*프래그먼트*/

@@ -1,16 +1,9 @@
-package oss.data;
+package NB.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/**게시판 내용
- *
- * @see Parcelable
- * [Parcelable] Intent로 보내기 위한 인터페이스
- *
- * @ TODO: 2021-07-29  글쓴이, 의료기관명, 병실, 환자명, 혈액형, 필요한 혈액 종류, 환자번호 ...
- *
- * */
+
 public class BoardItem implements Parcelable {
     //public int id;
     public String boardName;
@@ -20,7 +13,7 @@ public class BoardItem implements Parcelable {
 
     public BoardItem(){}
 
-    public BoardItem(String name, String info, UserData userData) {
+    public BoardItem(String name, String info, MyUser userData) {
         this.boardInfo = info;
         this.boardName = name;
         this.userName = userData.userName;

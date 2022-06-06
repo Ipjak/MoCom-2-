@@ -1,4 +1,4 @@
-package oss.main
+package NB.main
 
 import android.content.ContentValues.TAG
 import android.content.Intent
@@ -12,9 +12,9 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import oss.data.REF
-import oss.data.UserData
-import oss.util.SignInIntentContract
+import NB.data.REF
+import NB.data.MyUser
+import NB.util.SignInIntentContract
 
 class LoginActivity : AppCompatActivity() {
     val PASSED = "익명"
@@ -37,6 +37,7 @@ class LoginActivity : AppCompatActivity() {
         findViewById<Button>(R.id.main_google_button).setOnClickListener {
             //Launcher를 실행해 LoginActivity -> 구글 로그인 화면으로 이동.
             launcher!!.launch(getString(R.string.default_web_client_id))
+        //왜 빨강이지
         }
 
         // 카카오 로그인 버튼
@@ -53,7 +54,9 @@ class LoginActivity : AppCompatActivity() {
                             Log.d(TAG, "signInAnonymously:success")
                             val user = auth.currentUser
                             var intent = Intent(this, BoardActivity::class.java)
-                            intent.putExtra(REF.USER.name, UserData(PASSED, PASSED))
+                            intent.putExtra(REF.USER.name,
+                                MyUser(PASSED, PASSED)
+                            )
                             startActivity(intent)
                         } else {
                             // If sign in fails, display a message to the user.
@@ -78,7 +81,9 @@ class LoginActivity : AppCompatActivity() {
                         val mail = user?.email
 
                         var intent = Intent(this, BoardActivity::class.java)
-                        intent.putExtra(REF.USER.name, UserData(name, mail))
+                        intent.putExtra(REF.USER.name,
+                            MyUser(name, mail)
+                        )
                         startActivity(intent)
                     } else {
                         // If sign in fails, display a message to the user.
